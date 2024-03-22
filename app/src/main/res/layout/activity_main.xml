@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bmilogo"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BMI calculator"
+    android:layout_gravity="center_horizontal"
+    android:textSize="40sp"
+    android:layout_marginTop="20dp"
+    android:textColor="#FF3700B3"
+    android:textStyle="bold"
+    />
+    <EditText
+        android:id="@+id/edtHight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Hight in ft."
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/edtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Weight in Kg."
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get BMI"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnBmi"
+        />
+
+</LinearLayout>
+
